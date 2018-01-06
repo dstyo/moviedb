@@ -1,0 +1,22 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.arkadroid.fragment.AboutFragment">
+
+    <TextView
+        android:id="@+id/tvAbout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/about" />
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="@dimen/movie_card_width"
+        android:layout_height="@dimen/movie_card_width"
+        android:layout_above="@+id/tvAbout"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/ic_launcher" />
+
+</RelativeLayout>

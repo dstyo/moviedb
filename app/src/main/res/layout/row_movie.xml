@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="@dimen/movie_card_width"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/d_smaller">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivThumbnail"
+                android:layout_width="@dimen/movie_image_width"
+                android:layout_height="@dimen/movie_image_height"
+                android:background="@color/movie_thumb_bg"
+                android:scaleType="fitXY"
+                android:transitionName="@string/thumb_transition_name" />
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:lines="2"
+                android:paddingBottom="@dimen/d_smallest"
+                android:paddingLeft="@dimen/d_small"
+                android:paddingRight="@dimen/d_small"
+                android:paddingTop="@dimen/d_smallest"
+                android:textSize="@dimen/text_normal"
+                tools:text="The Movie Name can be long but not longer" />
+
+            <TextView
+                android:id="@+id/tvRate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="right"
+                android:lines="1"
+                android:paddingBottom="@dimen/d_smaller"
+                android:paddingLeft="@dimen/d_small"
+                android:paddingRight="@dimen/d_small"
+                android:textSize="@dimen/text_smaller"
+                android:textStyle="normal"
+                tools:text="7.1"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
